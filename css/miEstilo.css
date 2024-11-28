@@ -1,0 +1,73 @@
+.empresa{
+    color: rgb(18, 44, 5);
+    font-family: Estefania;
+    text-align: center;
+}
+
+.logo{
+    grid-area: logo;
+    text-align: center;
+}
+.header{
+    grid-area: header;
+    text-align: end;
+}
+
+.nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+.main{
+    grid-area: main;
+    height: 300px;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.grid-container{
+    background-color: rgb(72, 184, 62);
+    border-color: 1px solid rgb(43, 226, 89);
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+    /*grid-template-areas: 'header header header header header'
+                         'nav    main    main    main    article'
+                         'nav    footer  footer  footer  footer';*/
+    grid-template-areas: 'logo  header  header  header  header'
+                         'nav   nav     nav     nav     nav'
+                         'main   main    main    main    main'
+                         'footer    footer  footer  footer  footer';
+}
+
+.grid-container div{
+    background-color: rgb(101, 235, 60);
+    border: 2px solid rgb(16, 131, 16);
+}
+
+@font-face{
+    font-family: Estefania;
+    src: url(/GeistMono-VariableFont_wght.ttf);
+}
+*{
+    font-family: Estefania;
+}
+a{
+    text-decoration: none;
+    background-color: rgb(60, 145, 20);
+    padding: 2px;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+a:hover{
+    font-family: cursive;
+    background-color: rgb(76, 129, 15);
+    color: rgb(10, 54, 4);
+}
